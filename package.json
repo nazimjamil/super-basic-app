@@ -1,0 +1,30 @@
+{
+  "name": "super-basic-app",
+  "version": "1.0.0",
+  "description": "A super basic app.",
+  "main": "app/index.js",
+  "repository": "git@github.com:nazimjamil/super-basic-app.git",
+  "author": "Naz <me@nazimjamil.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./webpack/webpack.production.babel.js",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.babel.js",
+    "test": "jest",
+    "transpile": "babel app -d lib --ignore 'app/**/*.spec.js'"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
+}
